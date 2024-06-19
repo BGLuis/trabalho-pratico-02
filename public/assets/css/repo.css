@@ -1,0 +1,93 @@
+.info{
+    margin: 30px 0;
+}
+
+h3{
+    font-size: 1.8rem;
+    color: #9e7ffa;
+}
+
+.avatar{
+    background-color: rgba(56, 56, 56, 0.5);
+    border-radius: 70px;
+    max-width: 320px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+.perfil-img{
+    height: 80px;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    overflow: hidden;
+    border: 4px solid white;
+    margin-right: 20px;
+}
+
+#link a{
+    width: 100%;
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+
+.list span{
+    padding: 10px 20px;
+    background-color: #9e7ffa;
+    border-radius: 60px;
+    display: inline-block;
+    margin: 5px;
+}
+
+.statistics{
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.statistics div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    width: 100%;
+    text-transform: capitalize;
+}
+
+#Contributors .list{
+    margin-top: 10px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(auto-fill, 150px);
+    gap: 10px;
+    justify-content: space-between;
+}
+
+#Contributors .contributor{
+    text-align: center;
+}
+#Contributors .contributor:hover{
+    transform: scale(1.1);
+}
+#Contributors .contributor .perfil-img{
+    margin: 10px auto;
+    height: 100px;
+}
+#Contributors .contributor h4{
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+
+@media only screen and (max-width: 600px) {
+    .statistics{
+        position: relative;
+        flex-direction: row;
+    }
+}

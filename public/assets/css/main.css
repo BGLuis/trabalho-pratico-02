@@ -1,0 +1,162 @@
+/* global */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: inherit;
+    position: relative;
+}
+
+html,body{
+    min-height: 100vh;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #a9a9a9;
+    border-radius: 5px;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+    transition: .3s;
+}
+a:hover{
+    color: #664bb9;
+}
+
+
+body{
+    opacity: 0;
+    background: 
+        url(../img/star-bg\ 2.png),
+        radial-gradient(circle at 20% 35%, #14064dbd 0, transparent 20%),
+        radial-gradient(ellipse at 20% 35%, #bf398944 0, transparent 50%),
+        linear-gradient(to bottom, #04010c 85%, #150428 );
+    color: white;
+    transition: .6s .3s opacity;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.erro {
+    position: absolute;
+    background-color: rgba(56, 56, 56, 0.5);
+    padding: 20px;
+    width: 80%;
+    border-radius: 20px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+#paralax-container{
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    z-index: -999;
+}
+#paralax-container .paralax{
+    animation: paralax infinite linear reverse 55s;
+}
+#paralax-container .paralax img{
+    width: 100%;
+    margin-top: 60px;
+    animation: paralax infinite linear 55s;
+}
+
+section{
+    margin: 40px;
+}
+section .container{
+    padding: 0 40px;
+    max-width: none;
+}
+section .divider{
+    border-bottom: 2px solid;
+    margin-bottom: 20px;
+    padding: 4px 20px;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* icones */
+
+.icons{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    aspect-ratio: 1/1;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+/* header */
+header{
+    padding: 30px 80px;
+    display: flex;
+    justify-content: space-between;
+}
+#logo{
+    font-size: 1.6rem;
+}
+
+nav a{
+    margin: 0 5px;
+}
+
+/* footer */
+
+footer{
+    background-color: #101010;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+    bottom: 0;
+}
+
+@media only screen and (max-width: 800px) {
+    section{
+        margin: 30px 20px;
+    }
+    section .container{
+        padding: 0 10px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    header{
+        background-color: rgba(56, 56, 56, 0.5);
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 30px 15px;
+    }
+    nav{
+        margin-top: 15px;
+    }
+}
+
+@keyframes paralax {
+    to{
+        rotate: 0deg;
+    }
+    from{
+        rotate: 360deg;
+    }
+}

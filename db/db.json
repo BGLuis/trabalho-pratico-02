@@ -1,0 +1,81 @@
+{
+    "contents":[
+        {
+            "id":1,
+            "name":"ICEI",
+            "image":"assets/img/ICEI.png",
+            "description":"O Instituto de Ciências Exatas e Informática (ICEI) da PUC Minas é um centro de ensino e pesquisa que oferece cursos de graduação e pós-graduação em diversas áreas",
+            "link":"https://icei.pucminas.br/",
+            "alt":"Banner do site ICEI"
+        },
+        {
+            "id":2,
+            "name":"W3Schools",
+            "image":"assets/img/W3Schools.png",
+            "description":"O W3Schools é um site educacional gratuito que oferece tutoriais, referências e exercícios para aprender a desenvolver páginas da web. O site abrange uma ampla gama de tópicos",
+            "link":"https://www.w3schools.com/",
+            "alt":"Banner do site W3Schools"
+        },
+        {
+            "id":3,
+            "name":"Canal Curso em Vídeo",
+            "image":"assets/img/Curso-em-Video.png",
+            "description":"O Curso em Vídeo é um canal no YouTube que oferece cursos online gratuitos em diversas áreas do conhecimento",
+            "link":"https://www.youtube.com/cursoemvideo",
+            "alt":"Banner do Canal Curso em Vídeo"
+        },
+        {
+            "id":4,
+            "name":"Flexbox Froggy",
+            "image":"assets/img/Flexbox-Froggy.png",
+            "description":"O Flexbox Froggy é um jogo interativo e educativo que te ajuda a aprender sobre o layout CSS Flexbox de forma divertida e prática. No jogo, você assume o papel de um sapo que precisa guiar seus amigos sapos até seus ninhos de lírios. Para isso, você precisa usar o CSS Flexbox para posicionar os lírios na tela de forma estratégica.",
+            "link":"https://flexboxfroggy.com/",
+            "alt":"Banner do site Flexbox Froggy"
+        },
+        {
+            "id":5,
+            "name":"Mozilla Developer Network",
+            "image":"assets/img/MDN.png",
+            "description":"O MDN Web Docs (Mozilla Developer Network) é um site wiki que oferece documentação abrangente e atualizada sobre as tecnologias web abertas, incluindo: HTML, CSS, JavaScript, APIs Web, Ferramentas de desenvolvimento web",
+            "link":"https://developer.mozilla.org/pt-BR/",
+            "alt":"Banner do site MDN"
+        }
+    ],
+    "coworkers":[
+        {
+            "id":1,
+            "name":"João Pedro",
+            "link":"https://github.com/jaoppb",
+            "image":"https://avatars.githubusercontent.com/u/61636386?v=4",
+            "alt":"Avatar do João Pedro"
+        },
+        {
+            "id":2,
+            "name":"Kaio Mayer",
+            "link":"https://github.com/kaiomayer",
+            "image":"https://avatars.githubusercontent.com/u/99258505?v=4",
+            "alt":"Avatar do Kaio Mayer"
+        },
+        {
+            "id":3,
+            "name":"Marcela Campos",
+            "link":"https://github.com/marcelacamposm",
+            "image":"https://avatars.githubusercontent.com/u/127448983?v=4",
+            "alt":"Avatar da Marcela Campos"
+        },
+        {
+            "id":4,
+            "name":"Gabriel Assis",
+            "link":"https://github.com/Gabriel-Assis-de-Souza",
+            "image":"https://avatars.githubusercontent.com/u/166427228?v=4",
+            "alt":"Avatar do Gabriel Assis"
+        },
+        {
+            "id":5,
+            "name":"Marcos França",
+            "link":"https://github.com/marhff",
+            "image":"https://avatars.githubusercontent.com/u/99540448?v=4",
+            "alt":"Avatar do Marcos França"
+        }
+    ]
+}

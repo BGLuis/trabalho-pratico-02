@@ -1,0 +1,188 @@
+/* perfil */
+#perfil .container {
+    display: flex;
+}
+
+#perfil .perfil-img{
+    aspect-ratio: 1/1;
+    width: 300px;
+    border: 4px solid white;
+    border-radius: 4px;
+    margin-right: 60px;
+    flex: none;
+}
+
+#perfil .info{
+    width: 100%;
+}
+
+#perfil .info h2{
+    color: #9e7ffa;
+    font-size: 1.2rem;
+}
+
+#perfil  .info p{
+    margin: 24px 0;
+    line-height: 1.4rem;
+}
+
+#perfil .info .area{
+    margin-top: auto;
+}
+
+#perfil .info .area div{
+    margin: 10px 0;
+}
+
+#perfil .info .area .visits{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+}
+
+#perfil .media .icons:hover{
+    background-color: #664bb9;
+}
+/* repository */
+
+#repository .container{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#repository .card{
+    text-transform: capitalize;
+    text-align: center;
+    transition: .3s;
+    background-color: rgba(56, 56, 56, 0.5);
+    padding: 20px;
+    border-radius: 20px;
+}
+#repository .card:hover{
+    transform: scale(1.1);
+    background-color: white;
+    fill: #664bb9;
+}
+
+#repository .card svg{
+    fill: #fff;
+    transition: .3s;
+}
+#repository .card:hover svg{
+    fill: #664bb9;
+}
+
+.statistics{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.statistics div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    width: 100%;
+}
+
+/* suggestion */
+
+#carousel{
+    height: 600px;
+}
+
+.carousel-indicators button{
+    border-radius: 100% !important;
+    width: 20px !important;
+    height: 20px !important;
+}
+
+.carousel-inner{
+    border-radius: 20px;
+    border: solid rgba(56, 56, 56, 0.3);
+    border-width: 40px 40px 70px 40px;
+    height: 100%;
+}
+.carousel-item,
+.text,
+.carousel-item img{
+    height: 100%;
+    width: 100%;
+}
+.carousel-item img{
+    z-index: -1;
+    position: absolute;
+}
+
+.carousel-item .text{
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: block;
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.carousel-item .text p{
+    font-size: 1.2rem;
+}
+
+/* co-worker */
+
+#co-worker .container{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.fellow{
+    text-align: center;
+    background-color: rgba(56, 56, 56, 0.5);
+    padding: 20px;
+    border-radius: 20px;
+    color: #fff;
+    transition: .3s;
+}
+.fellow:hover{
+    transform: scale(1.1);
+    background-color: white;
+    color: #664bb9;
+}
+
+.fellow .perfil-img{
+    aspect-ratio: 1/1;
+    width: 150px;
+    border: 4px solid white;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+.fellow h2{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+
+@media only screen and (max-width: 800px) {
+    #perfil .container{
+        flex-direction: column;
+    }
+    #perfil .perfil-img{
+        min-width: unset;
+        width: 100%;
+        height: auto;
+        margin-bottom: 30px;
+    }
+    #co-worker .container,
+    #repository .container{
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 600px) {
+    #perfil .info .area .visits{
+        position: relative;
+    }
+}
