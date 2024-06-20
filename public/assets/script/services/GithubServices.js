@@ -10,6 +10,11 @@ export default class {
         return resposta.json();
     }
 
+    async getUserSocial() {
+        const resposta = await fetch(`${this.urlBase}/users/${this.user}/social_accounts`);
+        return resposta.json();
+    }
+
     async getRepositories() {
         const resposta = await fetch(`${this.urlBase}/users/${this.user}/repos`);
         return resposta.json();
