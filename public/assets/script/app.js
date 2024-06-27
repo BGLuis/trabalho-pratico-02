@@ -52,7 +52,7 @@ window.addEventListener("load", async ()=>{
         
             //  Metadados
             title.innerText = `${user.login} | GitHub`;
-            description.innerText = user.bio;
+            description.content = user.bio;
         
             //  Header
             logo.innerText = user.login;

@@ -55,7 +55,7 @@ window.addEventListener("load", async ()=>{
         if(!repo.status){
             //  Metadados
             title.innerText = `${repo.name} | GitHub`;
-            description.innerText = repo.bio;
+            description.content = repo.description;
         
             //  Header
             logo.innerText = user.login;
@@ -91,7 +91,6 @@ window.addEventListener("load", async ()=>{
             }
             else infoTopics.parentNode.style.display = "none";
 
-            console.log(repo.license)
             if(repo.license) infoLicense.innerText = repo.license.name;
             else  infoLicense.innerText = 'Não definido';
 
