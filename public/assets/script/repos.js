@@ -78,7 +78,7 @@ window.addEventListener("load", async ()=>{
 
             infoLanguage.innerText = repo.language
 
-            infoLink.src = repo.url
+            infoLink.href = repo.url
             infoLink.innerText = repo.url
 
             infoStar.innerText = repo.stargazers_count
